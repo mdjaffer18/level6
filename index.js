@@ -1,5 +1,16 @@
-const app = require("./app");
-
-app.listen(3000, () => {
-  console.log("Started express server at port 3000");
-});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/styles.css" rel="stylesheet">
+    <title>Todo Application</title>
+</head>
+<body>
+    <%- include('header.ejs') %> 
+    <%- include('todos.ejs') %>
+    <%-include('footer.ejs')%>
+   
+</body>
+</html>
